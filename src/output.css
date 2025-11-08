@@ -227,17 +227,23 @@
   .left-0 {
     left: calc(var(--spacing) * 0);
   }
-  .left-5 {
-    left: calc(var(--spacing) * 5);
-  }
   .left-\[20\.5px\] {
     left: 20.5px;
   }
   .z-30 {
     z-index: 30;
   }
+  .col-3 {
+    grid-column: 3;
+  }
+  .mx-5 {
+    margin-inline: calc(var(--spacing) * 5);
+  }
   .mx-auto {
     margin-inline: auto;
+  }
+  .my-5 {
+    margin-block: calc(var(--spacing) * 5);
   }
   .mt-5 {
     margin-top: calc(var(--spacing) * 5);
@@ -266,6 +272,9 @@
   .table {
     display: table;
   }
+  .h-3 {
+    height: calc(var(--spacing) * 3);
+  }
   .h-5 {
     height: calc(var(--spacing) * 5);
   }
@@ -278,20 +287,14 @@
   .h-11 {
     height: calc(var(--spacing) * 11);
   }
-  .h-\[22\] {
-    height: 22;
-  }
   .h-\[22px\] {
     height: 22px;
   }
-  .h-\[40\] {
-    height: 40;
-  }
-  .h-\[40px\] {
-    height: 40px;
-  }
   .h-\[44px\] {
     height: 44px;
+  }
+  .h-\[60px\] {
+    height: 60px;
   }
   .h-\[70px\] {
     height: 70px;
@@ -326,14 +329,11 @@
   .w-\[22px\] {
     width: 22px;
   }
-  .w-\[22pxx\] {
-    width: 22pxx;
-  }
-  .w-\[40px\] {
-    width: 40px;
-  }
   .w-\[44px\] {
     width: 44px;
+  }
+  .w-\[60px\] {
+    width: 60px;
   }
   .w-\[70px\] {
     width: 70px;
@@ -344,11 +344,14 @@
   .w-\[246px\] {
     width: 246px;
   }
-  .w-\[px\] {
-    width: px;
+  .w-\[300px\] {
+    width: 300px;
   }
   .w-full {
     width: 100%;
+  }
+  .max-w-\[640\] {
+    max-width: 640;
   }
   .max-w-\[640px\] {
     max-width: 640px;
@@ -370,9 +373,6 @@
   }
   .grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-  .grid-cols-4 {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
   .flex-col {
     flex-direction: column;
@@ -404,6 +404,9 @@
   .gap-3\.5 {
     gap: calc(var(--spacing) * 3.5);
   }
+  .gap-4 {
+    gap: calc(var(--spacing) * 4);
+  }
   .gap-\[2px\] {
     gap: 2px;
   }
@@ -416,11 +419,24 @@
   .gap-\[40px\] {
     gap: 40px;
   }
+  .gap-\[45\] {
+    gap: 45;
+  }
+  .gap-\[45px\] {
+    gap: 45px;
+  }
   .space-y-3 {
     :where(& > :not(:last-child)) {
       --tw-space-y-reverse: 0;
       margin-block-start: calc(calc(var(--spacing) * 3) * var(--tw-space-y-reverse));
       margin-block-end: calc(calc(var(--spacing) * 3) * calc(1 - var(--tw-space-y-reverse)));
+    }
+  }
+  .space-y-3\.5 {
+    :where(& > :not(:last-child)) {
+      --tw-space-y-reverse: 0;
+      margin-block-start: calc(calc(var(--spacing) * 3.5) * var(--tw-space-y-reverse));
+      margin-block-end: calc(calc(var(--spacing) * 3.5) * calc(1 - var(--tw-space-y-reverse)));
     }
   }
   .space-y-\[14px\] {
@@ -445,6 +461,9 @@
   .overflow-x-hidden {
     overflow-x: hidden;
   }
+  .rounded {
+    border-radius: 0.25rem;
+  }
   .rounded-2xl {
     border-radius: var(--radius-2xl);
   }
@@ -460,14 +479,15 @@
   .rounded-\[24px\] {
     border-radius: 24px;
   }
-  .rounded-\[40\] {
-    border-radius: 40;
-  }
   .rounded-\[40px\] {
     border-radius: 40px;
   }
   .rounded-full {
     border-radius: calc(infinity * 1px);
+  }
+  .rounded-b-3xl {
+    border-bottom-right-radius: var(--radius-3xl);
+    border-bottom-left-radius: var(--radius-3xl);
   }
   .border {
     border-style: var(--tw-border-style);
@@ -475,6 +495,9 @@
   }
   .border-\[\#E4E5E9\] {
     border-color: #E4E5E9;
+  }
+  .border-\[E4E5E9\] {
+    border-color: E4E5E9;
   }
   .bg-\[\#030504\] {
     background-color: #030504;
@@ -488,9 +511,6 @@
   .bg-\[\#F4F5F7\] {
     background-color: #F4F5F7;
   }
-  .bg-red-400 {
-    background-color: var(--color-red-400);
-  }
   .bg-white {
     background-color: var(--color-white);
   }
@@ -500,11 +520,17 @@
   .object-bottom {
     object-position: bottom;
   }
-  .object-center {
-    object-position: center;
+  .p-3 {
+    padding: calc(var(--spacing) * 3);
+  }
+  .p-3\.5 {
+    padding: calc(var(--spacing) * 3.5);
   }
   .p-4 {
     padding: calc(var(--spacing) * 4);
+  }
+  .p-5 {
+    padding: calc(var(--spacing) * 5);
   }
   .px-2 {
     padding-inline: calc(var(--spacing) * 2);
@@ -524,6 +550,9 @@
   .px-\[18px\] {
     padding-inline: 18px;
   }
+  .px-\[20px\] {
+    padding-inline: 20px;
+  }
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
   }
@@ -538,6 +567,9 @@
   }
   .py-4 {
     padding-block: calc(var(--spacing) * 4);
+  }
+  .py-5 {
+    padding-block: calc(var(--spacing) * 5);
   }
   .py-\[7px\] {
     padding-block: 7px;
@@ -561,18 +593,6 @@
     font-size: var(--text-2xl);
     line-height: var(--tw-leading, var(--text-2xl--line-height));
   }
-  .text-3xl {
-    font-size: var(--text-3xl);
-    line-height: var(--tw-leading, var(--text-3xl--line-height));
-  }
-  .text-4xl {
-    font-size: var(--text-4xl);
-    line-height: var(--tw-leading, var(--text-4xl--line-height));
-  }
-  .text-8xl {
-    font-size: var(--text-8xl);
-    line-height: var(--tw-leading, var(--text-8xl--line-height));
-  }
   .text-sm {
     font-size: var(--text-sm);
     line-height: var(--tw-leading, var(--text-sm--line-height));
@@ -587,8 +607,23 @@
   .text-\[18px\] {
     font-size: 18px;
   }
+  .text-\[22px\] {
+    font-size: 22px;
+  }
   .text-\[32px\] {
     font-size: 32px;
+  }
+  .leading-0 {
+    --tw-leading: calc(var(--spacing) * 0);
+    line-height: calc(var(--spacing) * 0);
+  }
+  .leading-7 {
+    --tw-leading: calc(var(--spacing) * 7);
+    line-height: calc(var(--spacing) * 7);
+  }
+  .leading-8 {
+    --tw-leading: calc(var(--spacing) * 8);
+    line-height: calc(var(--spacing) * 8);
   }
   .leading-9 {
     --tw-leading: calc(var(--spacing) * 9);
@@ -598,9 +633,17 @@
     --tw-leading: 18px;
     line-height: 18px;
   }
+  .leading-\[21\] {
+    --tw-leading: 21;
+    line-height: 21;
+  }
   .leading-\[21px\] {
     --tw-leading: 21px;
     line-height: 21px;
+  }
+  .leading-\[26px\] {
+    --tw-leading: 26px;
+    line-height: 26px;
   }
   .leading-\[27px\] {
     --tw-leading: 27px;
@@ -621,6 +664,9 @@
   .font-semibold {
     --tw-font-weight: var(--font-weight-semibold);
     font-weight: var(--font-weight-semibold);
+  }
+  .whitespace-nowrap {
+    white-space: nowrap;
   }
   .text-\[\#43484C\] {
     color: #43484C;
