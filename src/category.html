@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="output.css" rel="stylesheet" />
+    <title>Shujia | Category</title>
+</head>
+<body>
+	<main class="relative mx-auto flex w-full max-w-[640px] flex-col gap-[30px] overflow-x-hidden bg-white pb-[112px]">
+		<div id="background" class="absolute left-0 right-0 top-0">
+			<img src="/src/assets/images/backgrounds/orange-detail-background.png" alt="image" class="h-[345px] w-full object-cover object-bottom">
+		</div>
+		<section id="NavTop" class="fixed left-0 right-0 top-4 z-30 transition-all duration-300">
+			<div class="mx-auto max-w-[640px] px-5">
+				<div id="ContainerNav" class="flex items-center justify-between py-[14px] transition-all duration-300">
+					<a href="index.html">
+						<div id="Back" class="flex h-11 w-11 shrink-0 items-center justify-center bg-white rounded-full">
+							<img src="/src/assets/images/icons/arrow-left.svg" alt="icon" class="h-[22px] w-[22px]">
+						</div>
+					</a>
+					<h2 id="title" class="text-white font-semibold transition-all duration-300">Explore</h2>
+					<a href="my-cart.html">
+						<div id="Cart" class="flex h-11 w-11 shrink-0 items-center justify-center bg-white rounded-full">
+							<img src="/src/assets/images/icons/bag-happy.svg" alt="icon" class="h-[22px] w-[22px]">
+						</div>
+					</a>
+				</div>
+			</div>
+		</section>
+		<header class="relative mx-auto mt-[100px] flex items-center gap-4">
+			<img src="/src/assets/images/icons/3dcube.svg" alt="image" class="h-[70px] w-[70px]">
+			<div class="flex flex-col gap-[2px]">
+				<h1 class="text-[26px] font-extrabold text-white leading-[39px]">Living Room</h1>
+				<p class="text-white">189,394 Service</p>
+			</div>
+		</header>
+		<section id="MostOrdered" class="relative space-y-3.5">
+			<h3 class="font-bold text-white text-[18px] leading-[27px] pl-5">Most Ordered</h3>
+			<div id="MostOrderedSlider">
+				<div>
+					<!-- card 1 -->
+					<div>
+						<a href="service-detail.html">
+							<div>
+								<span>
+									<div>
+										<img src="/src/assets/images/icons/Star 1.svg" alt="icon">
+										<p>4.8</p>
+									</div>
+								</span>
+								<div>
+									<img src="/src/assets/images/thumbnails/image.png" alt="image">
+								</div>
+								<h4>Mini Swim Pool and Kids Soccer Fields Grass</h4>
+								<div>
+									<div>
+										<img src="/src/assets/images/icons/menu-board.svg" alt="icon">
+										<p>Living Room</p>
+									</div>
+									<div>
+										<img src="/src/assets/images/icons/clock.svg" alt="icon">
+										<p>15 Hours</p>
+									</div>
+									<strong>Rp 8.560.392</strong>
+									<img src="/src/assets/images/icons/crown.svg" alt="icon">
+								</div>
+							</div>
+						</a>
+					</div>
+					<!-- card 2 -->
+				</div>
+			</div>
+		</section>
+		<section id="LatestServices"></section>
+		<section id="Filter"></section>
+	</main>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<script src="js/category.js"></script>
+    <script src="js/global-nav1.js"></script>
+</body>
+</html>
