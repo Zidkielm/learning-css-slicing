@@ -9,14 +9,15 @@ window.addEventListener("scroll", function () {
         containerNav.classList.add("bg-white", "rounded-[22px]", "px-[16px]", "shadow-[0px_12px_20px_0px_#0305041C]");
         navTop.classList.remove("top-[16px]");
         navTop.classList.add("top-[30px]");
-        back.classList.add("border", "border-shujia-graylight");
-        cart.classList.add("border", "border-shujia-graylight");
+        back.classList.add("border", "border-[#E4E5E9]");
+        cart.classList.add("border", "border-[#E4E5E9]");
         title.classList.remove("text-white");
     } else {
         containerNav.classList.remove("bg-white", "rounded-[22px]", "px-[16px]", "shadow-[0px_12px_20px_0px_#0305041C]");
         navTop.classList.add("top-[16px]");
         navTop.classList.remove("top-[30px]");
-        back.classList.remove("border", "border-shujia-graylight");
+        back.classList.remove("border", "border-[#E4E5E9]");
         title.classList.add("text-white");
     }
 });
+
