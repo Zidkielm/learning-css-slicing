@@ -215,6 +215,9 @@
   .bottom-0 {
     bottom: calc(var(--spacing) * 0);
   }
+  .bottom-1 {
+    bottom: calc(var(--spacing) * 1);
+  }
   .bottom-5 {
     bottom: calc(var(--spacing) * 5);
   }
@@ -269,6 +272,9 @@
   .table {
     display: table;
   }
+  .field-sizing-content {
+    field-sizing: content;
+  }
   .size-8 {
     width: calc(var(--spacing) * 8);
     height: calc(var(--spacing) * 8);
@@ -309,6 +315,15 @@
   .h-\[90px\] {
     height: 90px;
   }
+  .h-\[101\] {
+    height: 101;
+  }
+  .h-\[101px\] {
+    height: 101px;
+  }
+  .h-\[102\] {
+    height: 102;
+  }
   .h-\[140px\] {
     height: 140px;
   }
@@ -329,6 +344,9 @@
   }
   .min-h-12 {
     min-height: calc(var(--spacing) * 12);
+  }
+  .min-h-\[48\] {
+    min-height: 48;
   }
   .min-h-\[48px\] {
     min-height: 48px;
@@ -375,6 +393,9 @@
   .w-\[70px\] {
     width: 70px;
   }
+  .w-\[120px\] {
+    width: 120px;
+  }
   .w-\[212px\] {
     width: 212px;
   }
@@ -392,6 +413,9 @@
   }
   .w-full {
     width: 100%;
+  }
+  .max-w-\[640\] {
+    max-width: 640;
   }
   .max-w-\[640px\] {
     max-width: 640px;
@@ -468,6 +492,9 @@
   .gap-\[12px\] {
     gap: 12px;
   }
+  .gap-\[14px\] {
+    gap: 14px;
+  }
   .gap-\[20px\] {
     gap: 20px;
   }
@@ -516,6 +543,9 @@
   .overflow-x-hidden {
     overflow-x: hidden;
   }
+  .rounded {
+    border-radius: 0.25rem;
+  }
   .rounded-2xl {
     border-radius: var(--radius-2xl);
   }
@@ -544,8 +574,14 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
+  .border-\[\#D04B1E\] {
+    border-color: #D04B1E;
+  }
   .border-\[\#E4E5E9\] {
     border-color: #E4E5E9;
+  }
+  .border-\[\#\] {
+    border-color: #;
   }
   .bg-\[\#030504\] {
     background-color: #030504;
@@ -697,6 +733,10 @@
     --tw-leading: calc(var(--spacing) * 9);
     line-height: calc(var(--spacing) * 9);
   }
+  .leading-\[15px\] {
+    --tw-leading: 15px;
+    line-height: 15px;
+  }
   .leading-\[18px\] {
     --tw-leading: 18px;
     line-height: 18px;
@@ -763,6 +803,11 @@
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
   }
+  .transition {
+    transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter, display, content-visibility, overlay, pointer-events;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
   .transition-all {
     transition-property: all;
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
@@ -772,10 +817,49 @@
     --tw-duration: 300ms;
     transition-duration: 300ms;
   }
+  .hover\:border {
+    &:hover {
+      @media (hover: hover) {
+        border-style: var(--tw-border-style);
+        border-width: 1px;
+      }
+    }
+  }
   .hover\:border-\[\#D04B1E\] {
     &:hover {
       @media (hover: hover) {
         border-color: #D04B1E;
+      }
+    }
+  }
+  .hover\:border-\[\#\] {
+    &:hover {
+      @media (hover: hover) {
+        border-color: #;
+      }
+    }
+  }
+  .hover\:shadow {
+    &:hover {
+      @media (hover: hover) {
+        --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 1px 2px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+        box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+      }
+    }
+  }
+  .hover\:shadow-2xl {
+    &:hover {
+      @media (hover: hover) {
+        --tw-shadow: 0 25px 50px -12px var(--tw-shadow-color, rgb(0 0 0 / 0.25));
+        box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+      }
+    }
+  }
+  .hover\:shadow-\[0px_4px_10px_0px_\#43484C\] {
+    &:hover {
+      @media (hover: hover) {
+        --tw-shadow: 0px 4px 10px 0px var(--tw-shadow-color, #43484C);
+        box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
       }
     }
   }
