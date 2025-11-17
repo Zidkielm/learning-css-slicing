@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+    <link href="output.css" rel="stylesheet" />
+    <title>Shujia | Booking Form</title>
+</head>
+<body>
+	<main class="relative mx-auto min-h-screen w-full max-w-[640px] bg-[#F4F5F7]">
+		<div id="background" class="absolute right-0 top-0 left-0">
+			<img src="/src/assets/images/backgrounds/Rectangle-8.png" alt="image" class="h-[350px] object-bottom object-cover w-full">
+		</div>
+		<section id="NavTop" class="fixed left-0 right-0 top-[16px] z-30 transition-all duration-300">
+			<div class="mx-auto max-w-[640px] px-5">
+				<div id="ContainerNav" class="relative flex h-[68px] items-center justify-center transition-all duration-300">
+					<a id="BackA" href="my-cart.html" class="absolute left-0 transition-all duration-300">
+						<div id="back" class="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-white">
+							<img src="/src/assets/images/icons/arrow-left.svg" alt="icon" class="h-[22px] w-[22px]">
+						</div>
+					</a>
+					<h2 id="title" class="font-semibold text-white transition-all duration-300">BookingServices</h2>
+				</div>
+			</div>
+		</section>
+		<section id="ProgressBar"></section>
+		<div class="relative flex flex-col mt-[44px] px-5 pb-5">
+			<form action="payment.html">
+				<header></header>
+				<div class="mt-5 flex flex-col gap-5">
+					<section id="WorkingSchedule"></section>
+					<section id="PersonalIndformation"></section>
+					<section id="YourHomeAddress"></section>
+				</div>
+			</form>
+			<button id="ContinueToPayment"></button>
+		</div>
+	</main>
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+	<script src="js/jquery.js"></script>
+    <script src="js/global-nav2.js"></script>
+    <script src="js/booking-form.js"></script>
+</body>
+</html>
